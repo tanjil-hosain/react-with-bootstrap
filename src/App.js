@@ -1,25 +1,13 @@
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import React from 'react'
-import Home from './Home';
-import About from './About';
-import Contact from './Contact'
 
 export default function App() {
   return (
-    <BrowserRouter>
-      {/* Navigation */}
-      <nav>
-        <Link to="/">Home</Link> |{" "}
-        <Link to="/about">About</Link> |{" "}
-        <Link to="/contact">Contact</Link>
-      </nav>
+    
+    <div>
+        <h1 className='text-danger'>This is header</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus nisi veritatis repudiandae consequuntur impedit perferendis, obcaecati sequi, aspernatur sed unde hic quia tempore quas odit. Accusantium inventore ullam voluptates cupiditate.</p>
+    </div>
 
-      {/* Routes */}
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-    </BrowserRouter>
+
   )
 }
