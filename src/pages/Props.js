@@ -7,6 +7,8 @@ export default function Props() {
         age: 23,
         address: "Mirpur"
     }
+    //distructuring
+    const {name, age, address}=person
   return (
     <>
       <h1>This is my props</h1>
@@ -14,6 +16,13 @@ export default function Props() {
         Name: {person.name} <br />
         Age: {person.age} <br />
         Address: {person.address}
+      </p>
+      <h1>
+        Destructuring Output
+      </h1>
+      <p>
+        Name:{name}
+
       </p>
     </>
   )
