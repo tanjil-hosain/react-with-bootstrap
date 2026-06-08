@@ -1,12 +1,29 @@
 import React from 'react'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+
+
+import Nav from './components/Nav';
+import Header from './components/Header'
+import Home from './pages/Home';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import Props from './pages/Props';
+
 
 export default function App() {
   return (
-    
-    <div>
-        <h1 className='text-danger'>This is header</h1>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus nisi veritatis repudiandae consequuntur impedit perferendis, obcaecati sequi, aspernatur sed unde hic quia tempore quas odit. Accusantium inventore ullam voluptates cupiditate.</p>
-    </div>
+    <>
+    <BrowserRouter>
+    <Nav></Nav>
+    <Header></Header>
+     <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About/>} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/props" element={<Props />} />
+      </Routes>
+    </BrowserRouter>
+    </>
 
 
   )
