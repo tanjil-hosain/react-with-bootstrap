@@ -10,6 +10,7 @@ import Contact from './pages/Contact';
 import Props from './pages/Props';
 import Event from './pages/Event';
 import List from './pages/List';
+import Forms from './pages/Forms';
 
 
 export default function App() {
@@ -25,6 +26,7 @@ export default function App() {
         <Route path="/props" element={<Props />} />
         <Route path="/events" element={<Event />} />
         <Route path="/list" element={<List />} />
+        <Route path="/forms" element={<Forms />} />
       </Routes>
     </BrowserRouter>
     </>
