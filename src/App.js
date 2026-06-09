@@ -9,6 +9,7 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Props from './pages/Props';
 import Event from './pages/Event';
+import List from './pages/List';
 
 
 export default function App() {
@@ -23,6 +24,7 @@ export default function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/props" element={<Props />} />
         <Route path="/events" element={<Event />} />
+        <Route path="/list" element={<List />} />
       </Routes>
     </BrowserRouter>
     </>
