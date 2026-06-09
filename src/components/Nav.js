@@ -20,6 +20,9 @@ export default function Nav() {
       <li className="nav-item">
         <Link className="nav-link" to="/props">Props</Link>
       </li>
+       <li className="nav-item">
+        <Link className="nav-link" to="/events">Events</Link>
+      </li>
       
     </ul>
   </div>

@@ -8,6 +8,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Props from './pages/Props';
+import Event from './pages/Event';
 
 
 export default function App() {
@@ -21,6 +22,7 @@ export default function App() {
         <Route path="/about" element={<About/>} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/props" element={<Props />} />
+        <Route path="/events" element={<Event />} />
       </Routes>
     </BrowserRouter>
     </>
