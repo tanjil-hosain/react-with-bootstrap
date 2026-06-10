@@ -16,7 +16,11 @@ export default function Form2() {
           <form action="">
             Name: <br />
             <input type="text" name='fname' value={inputs.fname} onChange={handlechange} /> <br />
+            Gender: <br />
+            <input type="radio" name='gender' value="Male" checked={inputs.gender==="Male"} onChange={handlechange}/> Male
+            <input type="radio" name='gender' value="Female" checked={inputs.gender==="Female"} onChange={handlechange}/>Female <br />
             Address: <br />
+            
             <textarea name="address"  onChange={handlechange}>{inputs.address}</textarea> <br /> District
             <select name="district" onChange={handlechange}>
                 <option value="Dhaka">Dhaka</option>

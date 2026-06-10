@@ -32,6 +32,9 @@ export default function Nav() {
        <li className="nav-item">
         <Link className="nav-link" to="/forms2">Form2</Link>
       </li>
+      <li className="nav-item">
+        <Link className="nav-link" to="/display">Display Data</Link>
+      </li>
       
     </ul>
   </div>

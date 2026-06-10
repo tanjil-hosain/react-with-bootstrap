@@ -12,6 +12,7 @@ import Event from './pages/Event';
 import List from './pages/List';
 import Forms from './pages/Forms';
 import Form2 from './pages/Form2';
+import Display_data from './pages/Display_data';
 
 
 export default function App() {
@@ -29,6 +30,7 @@ export default function App() {
         <Route path="/list" element={<List />} />
         <Route path="/forms" element={<Forms />} />
         <Route path="/forms2" element={<Form2/>} />
+        <Route path="/display" element={<Display_data/>} />
       </Routes>
     </BrowserRouter>
     </>
