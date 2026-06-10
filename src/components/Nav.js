@@ -29,6 +29,9 @@ export default function Nav() {
       <li className="nav-item">
         <Link className="nav-link" to="/forms">Forms</Link>
       </li>
+       <li className="nav-item">
+        <Link className="nav-link" to="/forms2">Form2</Link>
+      </li>
       
     </ul>
   </div>

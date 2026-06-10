@@ -11,6 +11,7 @@ import Props from './pages/Props';
 import Event from './pages/Event';
 import List from './pages/List';
 import Forms from './pages/Forms';
+import Form2 from './pages/Form2';
 
 
 export default function App() {
@@ -27,6 +28,7 @@ export default function App() {
         <Route path="/events" element={<Event />} />
         <Route path="/list" element={<List />} />
         <Route path="/forms" element={<Forms />} />
+        <Route path="/forms2" element={<Form2/>} />
       </Routes>
     </BrowserRouter>
     </>
