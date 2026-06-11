@@ -1,3 +1,4 @@
+import axios from 'axios';
 import React, { useState } from 'react'
 
 export default function Form2() {
@@ -8,7 +9,17 @@ export default function Form2() {
     
         setInputs(values => ({...values, [name]: value}))
        }
+       
+       function hnadleSubmit(e){
+        e.preventDefault();
+        
+        axios.post("http://localhost/myapp2/myapp2/api/user_create.php", inputs)
+        .then(res => {console.log("Data Sent",res.data)});
+
+       }
        console.log(inputs)
+      
+     
     
       return (
         <>
@@ -24,11 +35,12 @@ export default function Form2() {
             <textarea name="address"  onChange={handlechange}>{inputs.address}</textarea> <br /> District
             <select name="district" onChange={handlechange}>
                 <option value="Dhaka">Dhaka</option>
-                <option value="hittagong">Chittagong</option>
+                <option value="Chittagong">Chittagong</option>
                 <option value="Cumilla">Cumilla</option>
                 <option value="Feni">Feni</option>
 
             </select>
+            <button type="button" onClick={hnadleSubmit} >Submit</button>
           </form>
         </>
       )
