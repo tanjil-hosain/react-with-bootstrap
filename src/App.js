@@ -13,6 +13,7 @@ import List from './pages/List';
 import Forms from './pages/Forms';
 import Form2 from './pages/Form2';
 import Display_data from './pages/Display_data';
+import User_list from './pages/User_list';
 
 
 export default function App() {
@@ -31,6 +32,8 @@ export default function App() {
         <Route path="/forms" element={<Forms />} />
         <Route path="/forms2" element={<Form2/>} />
         <Route path="/display" element={<Display_data/>} />
+        <Route path="/userlist" element={<User_list/>} />
+
       </Routes>
     </BrowserRouter>
     </>
